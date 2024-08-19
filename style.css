@@ -237,6 +237,7 @@ body{
     }
     #middleform{
         margin-top: 20px;
+        margin-bottom: 100px;
     }
     header h1{
         font-size: 40px;
@@ -254,5 +255,17 @@ body{
     }
     .Checkbox-Itens label{
         font-size: 15px;
+    }
+    footer .linha1{
+       flex-direction: column;
+    }
+    .endereço{
+        width: 95%;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    footer .linha2 a{
+        font-size: 10px;
+        align-items: center;
     }
 }
