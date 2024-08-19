@@ -5,6 +5,9 @@
 
     --fonte-padrão: inter;
 }
+body{
+    width: 100%;
+}
 #topmenu{
     background: var(--preto-dnc);
     width: 100%;
@@ -52,13 +55,11 @@ body{
     background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
 }
 #middleform{
-    height: 2206px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
 }
     header{
         color: white;
@@ -95,7 +96,7 @@ body{
     }
     .formgroup input{
     border-radius: 10px;
-    width: 630px;
+    width: 100%;
     height: 50px;
     font-size: 20px;
     font-weight: 400;
@@ -137,3 +138,121 @@ body{
         cursor: pointer;
         margin-top: 100px;
     }
+    footer{
+        width: 100%;
+        background-color: var(--azul-dnc);
+    }
+    footer .linha1{
+        color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        height: 380px;
+    }
+    footer h5{
+        font-family: var(--fonte-padrão);
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 30.26px;
+        background-color: var(--preto-dnc);
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 15px;
+    }
+    footer ul{
+        font-family: var(--fonte-padrão);
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30.26px;
+    }
+    footer ul li{
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+    }
+    footer div nav ul li a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    footer a:hover{
+        color: var(--cinza-hover);
+    }
+    .endereço{
+        font-family: var(--fonte-padrão);
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24.2px;
+        text-align: center;
+    }
+    footer .linha2 nav{
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 10px;
+
+    }
+    footer .linha2 a:first-child{
+        border-right: 3px solid white;
+    }
+    footer .linha2 a{
+        font-family: var(--fonte-padrão);
+        font-size: 25px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        padding: 10px;
+    }
+    footer .linha2 a:hover{
+        col
+        or: var(--cinza-hover);
+    }
+@media (max-width: 600px) {
+    #topmenu{
+        flex-direction: column;
+        height: auto;
+        padding-top: 20px;
+    }
+    #topmenu #links{
+        flex-direction: column;
+        margin: 0px;
+        width: 100%;
+        align-items: center;
+    }
+    #topmenu #links .link{
+        display: flex;
+        height: 50px;
+    }
+    #topmenu #login{
+        width: 100%;
+        margin: 0px;
+    }
+    #middleform{
+        margin-top: 20px;
+    }
+    header h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    header h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding-right: 5px;
+        padding-left: 5px   ;
+    }
+    form{
+       width: 95%;
+       font-size: 20px;
+    }
+    .Checkbox-Itens label{
+        font-size: 15px;
+    }
+}
